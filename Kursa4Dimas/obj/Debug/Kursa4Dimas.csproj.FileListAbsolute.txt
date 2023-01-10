@@ -1,0 +1,10 @@
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\bin\Debug\Kursa4Dimas.exe.config
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\bin\Debug\Kursa4Dimas.exe
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\bin\Debug\Kursa4Dimas.pdb
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursa4Dimas.csproj.AssemblyReference.cache
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursach.GameForm.resources
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursa4Dimas.Properties.Resources.resources
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursa4Dimas.csproj.GenerateResource.cache
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursa4Dimas.csproj.CoreCompileInputs.cache
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursa4Dimas.exe
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursa4Dimas.pdb
