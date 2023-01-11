@@ -24,24 +24,9 @@ namespace Kursach
             InitializeComponent();
             timer.Tick += new System.EventHandler(Update);
             KeyDown += new KeyEventHandler(Check);
-            LoadLevel(level);
             Init(level);
         }
-        public void CreateBin()
-        {
-            using (BinaryWriter write = new BinaryWriter(File.Open("Level2", FileMode.OpenOrCreate)))
-            {
-                for (int i = 0; i < 50; i++)
-                {
-                    write.Write(GenerationRandom(rand));
-                }
-            }
-        }
-        public int GenerationRandom(Random rng)
-        {
-            return rng.Next(1,5);
-        }
-        private void Update(object sender, EventArgs e)
+        private void Update(object sender, EventArgs e) //по тику таймера обновление (сдвиг клеток)
         {
             var pictureBoxList = this.Controls.OfType<PictureBox>()
             .Where(x => x.Name.StartsWith("pictureBox"))
