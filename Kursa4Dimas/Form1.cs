@@ -12,14 +12,20 @@ namespace Kursach
 {
     public partial class GameForm : Form
     {
+        WMPLib.WindowsMediaPlayer wplayer = new WMPLib.WindowsMediaPlayer();
+        WMPLib.WindowsMediaPlayer wplayer2 = new WMPLib.WindowsMediaPlayer();
         List<int> ColorList = new List<int>();
         Random rand = new Random();
+        List<PictureBox> pictureBoxList = new List<PictureBox>(5);
         int NowColor = -1;
         int Score = 0;
+        int GlobalJ = 0;
         public GameForm()
         {
+            wplayer.URL = "C:\\Users\\4859554\\Downloads\\weekend.wav";
+            wplayer.controls.play();
             InitializeComponent();
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 2000; i++)
             {
                 ColorList.Add(GenerationRandom(rand));
             }
@@ -32,7 +38,35 @@ namespace Kursach
         }
         private void Update(object sender, EventArgs e)
         {
-            RandomUpdate();
+            var pictureBoxList = this.Controls.OfType<PictureBox>()
+            .Where(x => x.Name.StartsWith("pictureBox"))
+            .ToList();
+            //RandomUpdate();
+            int j = GlobalJ;
+            for (int i = 0; i < pictureBoxList.Count; i++)
+            {
+                switch (ColorList[j++])
+                {
+                    case 1:
+                        pictureBoxList[i].BackColor = Color.Lime;
+                        break;
+                    case 2:
+                        pictureBoxList[i].BackColor = Color.Red;
+                        break;
+                    case 3:
+                        pictureBoxList[i].BackColor = Color.Yellow;
+                        break;
+                    case 4:
+                        pictureBoxList[i].BackColor = Color.Blue;
+                        break;
+                    case 5:
+                        pictureBoxList[i].BackColor = Color.Violet;
+                        break;
+                }
+            }
+            NowColor = ColorList[GlobalJ];
+            ProgressBarMusic.Value += 1;
+            GlobalJ++;
             Invalidate();
         }
         public void RandomUpdate()
@@ -46,19 +80,19 @@ namespace Kursach
             switch (randSwitch)
             {
                 case 1:
-                    PictureBoxColor.BackColor = Color.Lime;
+                    pictureBox0.BackColor = Color.Lime;
                     break;
                 case 2:
-                    PictureBoxColor.BackColor = Color.Red;
+                    pictureBox0.BackColor = Color.Red;
                     break;
                 case 3:
-                    PictureBoxColor.BackColor = Color.Yellow;
+                    pictureBox0.BackColor = Color.Yellow;
                     break;
                 case 4:
-                    PictureBoxColor.BackColor = Color.Blue;
+                    pictureBox0.BackColor = Color.Blue;
                     break;
                 case 5:
-                    PictureBoxColor.BackColor = Color.Violet;
+                    pictureBox0.BackColor = Color.Violet;
                     break;
             }
             NowColor = randSwitch;
@@ -92,10 +126,14 @@ namespace Kursach
             int Pr = Press(sender, e);
             if (Pr != NowColor)
             {
+                wplayer2.URL = "C:\\Users\\4859554\\Downloads\\bass.wav";// "C:\\Users\\4859554\\Downloads\\no.wav";
+                wplayer2.controls.play();
                 Score_Update(-10);
             }
             else
             {
+                wplayer2.URL = "C:\\Users\\4859554\\Downloads\\bass.wav";
+                wplayer2.controls.play();
                 Score_Update(10);
             }
         }
