@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Kursach.Properties {
+namespace Kursa4Dimas.Properties {
     using System;
     
     
@@ -57,16 +57,6 @@ namespace Kursach.Properties {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap lime {
-            get {
-                object obj = ResourceManager.GetObject("lime", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
