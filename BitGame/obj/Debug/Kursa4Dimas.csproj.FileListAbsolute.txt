@@ -1,0 +1,16 @@
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursa4Dimas.csproj.AssemblyReference.cache
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursach.GameForm.resources
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursa4Dimas.csproj.GenerateResource.cache
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursa4Dimas.csproj.CoreCompileInputs.cache
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursa4Dimas.csproj.CopyComplete
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursach.Menu.resources
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursach.GameOver.resources
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursach.LevelMenu.resources
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursach.Records.resources
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\bin\Debug\Kursach.exe.config
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\bin\Debug\Kursach.exe
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\bin\Debug\Kursach.pdb
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursach.Properties.Resources.resources
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursach.exe
+C:\Users\4859554\source\repos\Kursa4Dimas\Kursa4Dimas\obj\Debug\Kursach.pdb

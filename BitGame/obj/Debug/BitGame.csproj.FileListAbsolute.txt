@@ -1,0 +1,16 @@
+C:\Users\4859554\source\repos\BitGame\BitGame\bin\Debug\BitGameKurs.exe.config
+C:\Users\4859554\source\repos\BitGame\BitGame\bin\Debug\BitGameKurs.exe
+C:\Users\4859554\source\repos\BitGame\BitGame\bin\Debug\BitGameKurs.pdb
+C:\Users\4859554\source\repos\BitGame\BitGame\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\4859554\source\repos\BitGame\BitGame\obj\Debug\BitGame.csproj.AssemblyReference.cache
+C:\Users\4859554\source\repos\BitGame\BitGame\obj\Debug\Kursach.GameForm.resources
+C:\Users\4859554\source\repos\BitGame\BitGame\obj\Debug\Kursach.GameOver.resources
+C:\Users\4859554\source\repos\BitGame\BitGame\obj\Debug\Kursach.LevelMenu.resources
+C:\Users\4859554\source\repos\BitGame\BitGame\obj\Debug\Kursach.Menu.resources
+C:\Users\4859554\source\repos\BitGame\BitGame\obj\Debug\BitGame.Properties.Resources.resources
+C:\Users\4859554\source\repos\BitGame\BitGame\obj\Debug\Kursach.Records.resources
+C:\Users\4859554\source\repos\BitGame\BitGame\obj\Debug\BitGame.csproj.GenerateResource.cache
+C:\Users\4859554\source\repos\BitGame\BitGame\obj\Debug\BitGame.csproj.CoreCompileInputs.cache
+C:\Users\4859554\source\repos\BitGame\BitGame\obj\Debug\BitGame.csproj.CopyComplete
+C:\Users\4859554\source\repos\BitGame\BitGame\obj\Debug\BitGameKurs.exe
+C:\Users\4859554\source\repos\BitGame\BitGame\obj\Debug\BitGameKurs.pdb
