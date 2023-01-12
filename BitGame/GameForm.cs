@@ -85,13 +85,13 @@ namespace Kursach
             int Pr = Press(sender, e);
             if (Pr != NowColor && Pr != -1)
             {
-                wplayer2.URL = "C:\\Users\\4859554\\source\\repos\\BitGame\\BitGame\\bin\\Debug\\Music\\no.wav";
+                wplayer2.URL = "./Music/no.wav";
                 wplayer2.controls.play();
                 Score_Update(-10);
             }
             else
             {
-                wplayer2.URL = "C:\\Users\\4859554\\source\\repos\\BitGame\\BitGame\\bin\\Debug\\Music\\bass.wav";
+                wplayer2.URL = "./Music/bass.wav";
                 wplayer2.controls.play();
                 if (Pr != -1)
                     Score_Update(10);
@@ -101,7 +101,7 @@ namespace Kursach
         {
             if (ProgressBarMusic.Value + 1 == ProgressBarMusic.Maximum)
             {
-                string filename = "C:\\Users\\4859554\\source\\repos\\BitGame\\BitGame\\bin\\Debug\\Records";
+                string filename = "./Records";
                 bool flag = true;
                 timer.Stop();
                 wplayer3.controls.stop();
@@ -129,16 +129,16 @@ namespace Kursach
             switch (level)
             {
                 case 1:
-                    filename = "C:\\Users\\4859554\\source\\repos\\BitGame\\BitGame\\bin\\Debug\\Levels\\Level1";
+                    filename = "./Levels/Level1";
                     wplayer.controls.stop();
-                    wplayer3.URL = "C:\\Users\\4859554\\source\\repos\\BitGame\\BitGame\\bin\\Debug\\Music\\music.mp3";
+                    wplayer3.URL = "./Music/music.mp3";
                     timer.Interval = 700;
                     LabelSpeed.Text = "Скорость: " + 700 + "мс";
                     break;
                 case 2:
-                    filename = "C:\\Users\\4859554\\source\\repos\\BitGame\\BitGame\\bin\\Debug\\Levels\\Level2";
+                    filename = "./Levels/Level2";
                     wplayer.controls.stop();
-                    wplayer3.URL = "C:\\Users\\4859554\\source\\repos\\BitGame\\BitGame\\bin\\Debug\\Music\\music2.mp3";
+                    wplayer3.URL = "./Music/music2.mp3";
                     timer.Interval = 500;
                     LabelSpeed.Text = "Скорость: " + 500 + "мс";
                     break;

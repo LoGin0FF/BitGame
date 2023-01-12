@@ -6,7 +6,7 @@ namespace Kursach
 {
     public partial class Records : Form
     {
-        string filename = "C:\\Users\\4859554\\source\\repos\\BitGame\\BitGame\\bin\\Debug\\Records";
+        string filename = "./Records";
         public Records()
         {
             InitializeComponent();

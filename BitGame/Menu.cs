@@ -9,7 +9,7 @@ namespace Kursach
         public Menu()
         {
             InitializeComponent();
-            wplayer.URL = "C:\\Users\\4859554\\source\\repos\\BitGame\\BitGame\\bin\\Debug\\Music\\music.mp3";
+            wplayer.URL = "./Music/music.mp3";
             wplayer.controls.play();
         }
 
