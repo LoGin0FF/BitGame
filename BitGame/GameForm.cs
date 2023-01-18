@@ -17,8 +17,10 @@ namespace Kursach
         Random rand = new Random();
         List<PictureBox> pictureBoxList = new List<PictureBox>(5);
         int NowColor = -1;
-        int Score = 0, MAX_SCORE;
+        int Score = 0;
         int GlobalJ = 0;
+        string MAX_SCORE = "500";
+        bool KeyPressSwitch = false;
         public GameForm(int level)
         {
             InitializeComponent();
@@ -54,31 +56,40 @@ namespace Kursach
             GameOver();
             ProgressBarMusic.Value += 1;
             GlobalJ++;
+            KeyPressSwitch = true;
             Invalidate();
         }
         public int Press(object sender, KeyEventArgs e)
         {
-            switch (e.KeyCode)
+            if (KeyPressSwitch)
             {
-                case Keys.D1:
-                    Button1_Click(sender,e);
-                    return 1;
-                case Keys.D2:
-                    Button2_Click(sender, e);
-                    return 2;
-                case Keys.D3:
-                    Button3_Click(sender, e);
-                    return 3;
-                case Keys.D4:
-                    Button4_Click(sender, e);
-                    return 4;
-                case Keys.Escape:
-                    wplayer3.controls.stop();
-                    this.Close();
-                    return -1;
-                default:
-                    return 0;
+                switch (e.KeyCode)
+                {
+                    case Keys.D1:
+                        Button1_Click(sender, e);
+                        KeyPressSwitch = false;
+                        return 1;
+                    case Keys.D2:
+                        Button2_Click(sender, e);
+                        KeyPressSwitch = false;
+                        return 2;
+                    case Keys.D3:
+                        Button3_Click(sender, e);
+                        KeyPressSwitch = false;
+                        return 3;
+                    case Keys.D4:
+                        Button4_Click(sender, e);
+                        KeyPressSwitch = false;
+                        return 4;
+                    case Keys.Escape:
+                        wplayer3.controls.stop();
+                        this.Close();
+                        return -1;
+                    default:
+                        return 0;
+                }
             }
+            else return 0;
         }
         public void Check(object sender, KeyEventArgs e)
         {
@@ -87,7 +98,6 @@ namespace Kursach
             {
                 wplayer2.URL = "./Music/no.wav";
                 wplayer2.controls.play();
-                Score_Update(-10);
             }
             else
             {
@@ -102,7 +112,7 @@ namespace Kursach
             if (ProgressBarMusic.Value + 1 == ProgressBarMusic.Maximum)
             {
                 string filename = "./Records";
-                bool flag = true;
+                bool flag = false;
                 timer.Stop();
                 wplayer3.controls.stop();
                 using (BinaryReader read = new BinaryReader(File.Open(filename, FileMode.Open)))
@@ -115,10 +125,9 @@ namespace Kursach
                     using (BinaryWriter write = new BinaryWriter(File.Open("Records", FileMode.OpenOrCreate)))
                     {
                         write.Write(Score);
-                        write.Write(MAX_SCORE);
                     }
                 }
-                GameOver gameWindow = new GameOver(Score, MAX_SCORE);
+                GameOver gameWindow = new GameOver(Score);
                 this.Close();
                 gameWindow.Show();
             }
@@ -145,7 +154,6 @@ namespace Kursach
                 default:
                     break;
             }
-            MAX_SCORE = 500;
             using (BinaryReader read = new BinaryReader(File.Open(filename, FileMode.Open)))
             {
                 while (read.PeekChar() != -1)

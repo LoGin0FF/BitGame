@@ -5,7 +5,8 @@ namespace Kursach
 {
     public partial class GameOver : Form
     {
-        public GameOver(int Score, int MAX_SCORE)
+        string MAX_SCORE = "500";
+        public GameOver(int Score)
         {
             InitializeComponent();
             LabelScore.Text = "Score: " + Score + " / " + MAX_SCORE;
